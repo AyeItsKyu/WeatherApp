@@ -1,0 +1,8 @@
+services:
+  alpine:
+    build:
+      context: ./frontend
+      dockerfile: alpine.Dockerfile
+    ports:
+      - "80:80"
+    container_name: alpine
