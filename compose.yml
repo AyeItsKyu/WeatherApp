@@ -1,8 +1,21 @@
 services:
-  alpine:
+  nextjs:
     build:
       context: ./frontend
-      dockerfile: alpine.Dockerfile
+      dockerfile: nextjs.Dockerfile
+    container_name: nextjs
+    networks:
+      - weather_network
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: nginx.Dockerfile
     ports:
       - "80:80"
-    container_name: alpine
+    container_name: nginx-reverse-proxy
+    networks:
+      - weather_network
+
+networks:
+  weather_network:
