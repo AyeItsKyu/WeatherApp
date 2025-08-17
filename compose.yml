@@ -4,6 +4,8 @@ services:
       context: ./frontend
       dockerfile: nextjs.Dockerfile
     container_name: nextjs
+    volumes:
+      - ./frontend/app/src:/app/src
     networks:
       - weather_network
 
