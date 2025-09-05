@@ -1,0 +1,37 @@
+.env
+compose.dev.yml
+*.drawio
+*.vs
+.vscode
+.idea
+*.user
+
+*sln
+
+# NextJS
+/frontend/app/node_modules
+/frontend/app/.pnp
+/frontend/app/.pnp.*
+/frontend/app/.yarn/*
+!/frontend/app/.yarn/patches
+!/frontend/app/.yarn/plugins
+!/frontend/app/.yarn/releases
+!/frontend/app/.yarn/versions
+/frontend/app/coverage
+/frontend/app/.next/
+/frontend/app/out/
+/frontend/app/build
+/frontend/app/.DS_Store
+/frontend/app/*.pem
+/frontend/app/npm-debug.log*
+/frontend/app/yarn-debug.log*
+/frontend/app/yarn-error.log*
+/frontend/app/.pnpm-debug.log*
+/frontend/app/.env*
+/frontend/app/.vercel
+/frontend/app/*.tsbuildinfo
+/frontend/app/next-env.d.ts
+
+# Webservice
+/services/weatherService/bin
+/services/weatherService/obj        
