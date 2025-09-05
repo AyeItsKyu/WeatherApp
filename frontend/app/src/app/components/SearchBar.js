@@ -8,7 +8,7 @@ export default function SearchBar() {
 
     const getWeather = (city_name) => {
         if (!city_name || city_name.trim() === "") return;
-        router.push(`/city/${city_name}`);
+        router.push(`/city/${encodeURIComponent(city_name.trim())}`);
     };
 
     return (
